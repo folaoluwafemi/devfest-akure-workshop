@@ -16,12 +16,9 @@ migrate_working_dir/
 *.iws
 .idea/
 
-# VS Code related
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+slides/*
+slides/
+
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -100,3 +97,5 @@ coverage/
 *.g.dart
 *.freezed.dart
 *.mocks.dart
+
+
