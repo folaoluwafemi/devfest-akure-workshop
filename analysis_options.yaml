@@ -1,0 +1,45 @@
+# Flutter analysis options for AI-assisted development
+# These rules help AI tools generate cleaner, more consistent code
+
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Prefer const constructors (better performance)
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_const_literals_to_create_immutables: true
+    
+    # Use final for variables that don't change
+    prefer_final_fields: true
+    prefer_final_locals: true
+    prefer_final_in_for_each: true
+    
+    # Clean imports
+    directives_ordering: true
+    always_use_package_imports: false
+    
+    # Better code style
+    avoid_print: true
+    avoid_empty_else: true
+    avoid_unnecessary_containers: true
+    prefer_single_quotes: true
+    require_trailing_commas: true
+    sort_child_properties_last: true
+    use_key_in_widget_constructors: true
+    
+    # Type safety
+    avoid_dynamic_calls: true
+    strict_raw_type: true
+    
+    # Documentation (optional - can be disabled for workshop)
+    # public_member_api_docs: true
+
+analyzer:
+  errors:
+    # Treat these as warnings, not errors (helpful during development)
+    missing_return: warning
+    todo: ignore
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
